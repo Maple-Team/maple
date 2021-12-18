@@ -1,6 +1,6 @@
 {
-  "name": "@maple/prettier-config",
-  "version": "0.0.0",
+  "name": "@liutsing/prettier-config-maple",
+  "version": "0.1.0",
   "description": "prettier config used by react app in maple",
   "author": "liutsing <liutsingluo@gmail.com> (https://tsing.studio/)",
   "homepage": "",
@@ -25,5 +25,5 @@
   "dependencies": {
     "prettier": "^2.5.1"
   },
-  "gitHead": "329ffb08e095c13497514de1c23184b33f3f4d31"
+  "gitHead": "40d24e42f56fc6f8ea7a8194aa5cedd612ca728b"
 }
