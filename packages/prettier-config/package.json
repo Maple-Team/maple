@@ -1,0 +1,29 @@
+{
+  "name": "@maple/prettier-config",
+  "version": "0.0.0",
+  "description": "prettier config used by react app in maple",
+  "author": "liutsing <liutsingluo@gmail.com> (https://tsing.studio/)",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "xx"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "prettier": "^2.5.1"
+  },
+  "gitHead": "329ffb08e095c13497514de1c23184b33f3f4d31"
+}

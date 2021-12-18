@@ -1,0 +1,48 @@
+{
+  "name": "@maple/robert",
+  "version": "0.0.0",
+  "description": "tools for maple robert",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./packages --ext=.js",
+    "lint:fix": "eslint ./packages --ext=.js --fix",
+    "release": "lerna publish --conventional-commits --yes",
+    "build": "lerna run build",
+    "postinstall": "lerna bootstrap"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "liutsing <liutsingluo@gmail.com> (https://tsing.studio/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@opd/eslint-config-pangu": "^1.13.7",
+    "@opd/prettier-config-pangu": "^1.13.6",
+    "@swc-node/jest": "1.4.3",
+    "eslint": "^8.4.1",
+    "husky": "^7.0.4",
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": "@opd/prettier-config-pangu"
+}
