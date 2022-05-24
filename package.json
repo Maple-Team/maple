@@ -5,7 +5,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "release": ""
+    "release": "",
+    "lint": "lint-staged"
   },
   "workspaces": [
     "packages/*"
@@ -23,9 +24,9 @@
   "author": "liutsing <liutsingluo@gmail.com> (https://tsing.studio/)",
   "license": "MIT",
   "devDependencies": {
+    "@maplero/prettier-config": "./packages/prettier-config",
     "husky": "^7.0.4",
-    "lint-staged": "^12.1.2",
-    "@maplero/prettier-config": "./packages/prettier-config"
+    "lint-staged": "^12.1.2"
   },
   "husky": {
     "hooks": {
@@ -34,10 +35,6 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{json,md}": [
       "prettier --write"
     ]
   },
